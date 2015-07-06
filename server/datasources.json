@@ -4,7 +4,8 @@
     "connector": "memory"
   },
   "mongodb_dev": {
-    "url": "mongodb://127.7.65.130:27017/propman",
+    "host": "mongodb://$OPENSHIFT_MONGODB_DB_HOST",
+    "port": "$OPENSHIFT_MONGODB_DB_PORT",
     "password": "NZ-QKYbPrDTB",
     "name": "mongodb_dev",
     "connector": "mongodb",
