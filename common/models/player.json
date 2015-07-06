@@ -1,0 +1,27 @@
+{
+  "name": "Player",
+  "base": "User",
+  "strict": false,
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "contracts": {
+      "type": "hasMany",
+      "model": "Contract",
+      "foreignKey": "publisherId"
+    },
+    "properties": {
+      "type": "hasMany",
+      "model": "Property",
+      "foreignKey": "publisherId"
+    },
+    "requests": {
+      "type": "hasMany",
+      "model": "Request",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

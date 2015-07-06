@@ -1,0 +1,46 @@
+{
+  "name": "Contract",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "startdate": {
+      "type": "date",
+      "required": true
+    },
+    "enddate": {
+      "type": "date",
+      "required": true
+    },
+    "template": {
+      "type": "string",
+      "required": true
+    },
+    "receiverId": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "property": {
+      "type": "belongsTo",
+      "model": "Property",
+      "foreignKey": ""
+    },
+    "player": {
+      "type": "belongsTo",
+      "model": "Player",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

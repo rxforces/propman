@@ -1,0 +1,29 @@
+<section>
+  <form name="form" ng-submit="submitForm()">
+    <fieldset>
+      <legend>{{action}} Contract Form</legend>
+
+      <div class="form-group">
+        <label>Start Date</label>
+        <input type="text" name="Address" ng-model="request.address">
+      </div>
+      <div class="form-group">
+        <label>End Date</label>
+        <input type="text" name="City" ng-model="request.city">
+      </div>
+      <div class="form-group">
+        <label>Type</label>
+        <input type="text" name="Address" ng-model="request.state">
+      </div>
+      <div class="form-group">
+        <label>Other Party</label>
+        <input type="text" name="Address" ng-model="request.postcode">
+      </div>
+
+      <div class="actions">
+        <label></label>
+        <button>{{action}} Contract</button>
+      </div>
+    </fieldset>
+  </form>
+  <section>

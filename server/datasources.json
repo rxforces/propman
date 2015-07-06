@@ -2,5 +2,10 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongodb_dev": {
+    "url": "mongodb://127.0.0.1:27017/propman",
+    "name": "mongodb_dev",
+    "connector": "mongodb"
   }
 }

@@ -1,0 +1,17 @@
+<section>
+  <div class="actions" ng-show="currentUser">
+    <button ui-sref="add-property">Add</button>
+  </div>
+  <p></p>
+  <article ng-repeat="r in properties.slice().reverse()">
+    <header>
+      <h1>{{r.address}}, {{r.city}}, {{r.state}}</h1>
+      <h2>{{r.owner.email}} | {{r.date | date}}</h2>
+    </header>
+
+    <div class="actions" ng-show="currentUser">
+      <button ui-sref="edit-property({ id: r.id })">Edit</button>
+      <button a ui-sref="delete-property({ id: r.id })">Delete</button>
+    </div>
+  </article>
+</section>

@@ -1,0 +1,9 @@
+<section>
+  <article ng-repeat="r in requests.slice().reverse()">
+    <header>
+      <h1>{{r.property.address}}, {{r.property.city}}, {{r.property.state}}</h1>
+      <h1>{{r.description}}</h1>
+      <h2>{{r.player.email}} | {{r.date | date}}</h2>
+    </header>
+  </article>
+</section>

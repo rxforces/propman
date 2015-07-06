@@ -1,8 +1,16 @@
 {
   "_meta": {
     "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
       "../common/models",
       "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
     ]
   },
   "User": {
@@ -23,5 +31,29 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Request": {
+    "dataSource": "mongodb_dev",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Contract": {
+    "dataSource": "mongodb_dev",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Property": {
+    "dataSource": "mongodb_dev",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Player": {
+    "dataSource": "mongodb_dev",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
