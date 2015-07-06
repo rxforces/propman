@@ -28,7 +28,7 @@
       "model": "Player",
       "foreignKey": "publisherId"
     }
-},
+  },
   "acls": [
     {
       "accessType": "*",
