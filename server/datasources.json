@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "mongodb_dev": {
-    "url": "mongodb://127.0.0.1:27017/propman",
+    "url": "mongodb://127.7.65.130:27017/propman",
     "password": "NZ-QKYbPrDTB",
     "name": "mongodb_dev",
     "connector": "mongodb",
